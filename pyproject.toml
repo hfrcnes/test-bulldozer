@@ -23,3 +23,6 @@
 [build-system]
 requires = ["setuptools", "wheel", "Cython", "numpy"]
 build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel]
+skip = ["pp*", "cp36-*", "cp37-*"]
